@@ -2,7 +2,8 @@ public class pascaluvTrojuhelnik {
 	public static void main(String[] args) {
 		//System.out.printf("%d\n", kombinace(Integer.parseInt(args[0]), Integer.parseInt(args[1])));
 		
-		int max_n = Integer.parseInt(args[0]);
+		// System vystupu
+        int max_n = Integer.parseInt(args[0]);
 		for (int n = 0; n < max_n; n++) {
 			for (int odsazeni = max_n; odsazeni > n; odsazeni--) {
 				System.out.printf("  ");			// Dve mezery
@@ -30,5 +31,4 @@ public class pascaluvTrojuhelnik {
         }
 
 	}
-
 }
