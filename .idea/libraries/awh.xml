@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="awh">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/awh.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
