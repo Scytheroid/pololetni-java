@@ -16,16 +16,16 @@ public class Pascal {
             }
 
             for (int i = 0; i < (n + 1); i++) {
-                System.out.printf("  %2d ", present[i]);
+                System.out.printf(" %2d ", present[i]);
             }
 
-            System.out.printf("\n");
+            System.out.println();
 
             past = Arrays.copyOf(present, max_n + 1 );
         }
     }
 
-    public static String odsazeni(int mezery){
+    private static String odsazeni(int mezery){
         final String mezera = "  ";         // Dve mezery
         String vystup = "";
         for (int i = 0; i < mezery; i++) {
