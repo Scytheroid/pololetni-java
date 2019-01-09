@@ -5,7 +5,7 @@ public class Elipsa {
         
         for (int y = 1; y < 2*vyska; y++) {
             for (int x = 1; x < 2*sirka; x++) {
-                if (vnitrek(y, x, vyska, sirka)) {
+                if (jeElipsa(y, x, vyska, sirka)) {
                     System.out.printf("X");
                 }
                 else {
@@ -17,15 +17,13 @@ public class Elipsa {
     }
     
 
-    public static boolean vnitrek(int y, int x, int vyska, int sirka) { // Zjistuje, zda je prvek uvnitr elipsy
+    public static boolean jeElipsa(int y, int x, int vyska, int sirka) { // Zjistuje, zda je prvek uvnitr elipsy
         double hrana =
         ( 
-                    Math.pow(((double)(y) - (double)(vyska)) / (double)(vyska), 2)
-                  + Math.pow(((double)(x) - (double)(sirka)) / (double)(sirka), 2)
+                    ((y - vyska) / (double)(vyska)) * ((y - vyska) / (double)(vyska))
+                  + ((x - sirka) / (double)(sirka)) * ((x - sirka) / (double)(sirka))
         );
-        if (hrana <= 1) {
-            return true;
-        }
-        return false;
+
+        return hrana <= 1;
     }
 }
