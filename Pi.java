@@ -25,7 +25,7 @@ public class Pi {
 
     }
 
-    private static boolean jeKruh(int y, int x) { // Zjistuje, zda je prvek uvnitr KRUHU
+    private static boolean jeKruh(int x, int y) { // Zjistuje, zda je prvek uvnitr KRUHU
         return POLOMER*POLOMER >= (x - POLOMER)*(x - POLOMER) + (y - POLOMER)*(y - POLOMER);
     }
 
