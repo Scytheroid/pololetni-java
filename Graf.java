@@ -34,10 +34,10 @@ public class Graf {
         }
 
         if (prevSize > HEIGHT) {
-            float coefficient = HEIGHT / (float) prevSize;
+            double coefficient = HEIGHT / (double) prevSize;
             // Scaling graphData down
             for (int i = 0; i < graphData.size(); i++) {
-                graphData.set( i, java.lang.Math.round(graphData.get(i) * coefficient));
+                graphData.set( i, (int) java.lang.Math.round(graphData.get(i) * coefficient));
             }
         }
 
