@@ -6,8 +6,8 @@ public class Pi {
     public static void main(String[] args)
             throws InterruptedException {
 
-        int uvnitr = 0;
-        int celkem = 0;
+        long uvnitr = 0;
+        long celkem = 0;
         double pi;
         java.util.Random rand = new java.util.Random();
 
